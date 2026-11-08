@@ -7,7 +7,7 @@ viewport and writes manifest.json with keyword_bbox in image pixels.
 
 It NEVER fabricates data. On captcha / 429 / block / consent wall it stops that
 engine/page immediately and records it in capture_report.json -> pending[].
-Automated capture can be unreliable; native browser screenshots + manually
+Results depend on page structure and site access; native browser screenshots + manually
 measured keyword_bbox are an equally valid manifest input.
 
   pip install playwright && python -m playwright install chromium

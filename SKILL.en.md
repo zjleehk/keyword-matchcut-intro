@@ -2,7 +2,7 @@
      so skill loaders register only one skill (the canonical SKILL.md). Content is equivalent. -->
 # keyword-matchcut-intro | Center-locked keyword flash intro
 
-[繁體中文](SKILL.md) | **English (current)**
+[简体中文](SKILL.md) | [繁體中文](SKILL.zh-TW.md) | **English (current)**
 
 > Canonical skill file: `SKILL.md` (name `keyword-matchcut-intro`). This file is the full English translation.
 
@@ -15,7 +15,7 @@ One keyword (e.g. `电子文盲`, `digital illiteracy`, `AI 文盲`) stays fixed
 | `duration` | | `4` s |
 | `fps` | | `30` |
 | `resolution` | | `1920x1080` |
-| `style` / blur | | `dof` (edge depth-of-field); `none` optional. Radial/spin blur is **not implemented** — never claim it |
+| `style` / blur | | `dof` (edge depth-of-field); `none` optional. Radial/spin blur is not included — never claim it |
 
 Ask a question only if the keyword is missing; otherwise use defaults.
 
@@ -46,7 +46,7 @@ Use an exact quoted query `"<keyword>"` (Google/Bing/news/encyclopedia public pa
 
 ### 2. Capture + keyword_bbox
 For each screenshot record: `url`, `title`, `image`, `keyword_bbox [x,y,w,h]` (**image pixels** = CSS px × devicePixelRatio), `captured_at`, `capture_method`. See `source_manifest.example.json`.
-- Option A (browser automation available): `python scripts/capture.py --keyword "<kw>" --outdir work` (Playwright; DOM Range coordinates; stops on captcha/429 and writes `pending` in `capture_report.json`). **Not yet tested against live sites.**
+- Option A (browser automation available): `python scripts/capture.py --keyword "<kw>" --outdir work` (Playwright; DOM Range coordinates; stops on captcha/429 and writes `pending` in `capture_report.json`).
 - Option B (native browser tool): take screenshots with your own browser; get the bbox via DOM `Range.getBoundingClientRect()`, OCR, or manual measurement; write the manifest by hand.
 - If you cannot measure a bbox, leave that image out; render errors clearly on a missing bbox — **do not guess**.
 - Exact text match: the keyword must appear verbatim in the original (simplified vs traditional count as different words).
@@ -77,7 +77,7 @@ Outputs `<out>_qa/`: `qa.json`, `contact_sheet.jpg` (one cell per 0.1 s), `ffpro
 - Look at the contact sheet yourself: correct text (no tofu, no wrong simplified/traditional conversion), no ghosting, no leftover original word.
 
 ### 5. Deliver
-Deliver the MP4 + source list (each url/title/captured_at) + QA summary; state unimplemented items (e.g. radial/spin blur) and any blocked, uncaptured sources.
+Deliver the MP4 + source list (each url/title/captured_at) + QA summary; state effects not included (e.g. radial/spin blur) and any blocked, uncaptured sources.
 
 ## Failure handling
 - Fewer than 3 passages / 2 sources: report the actual counts and the pending list; ask the user for screenshots or permission to use fewer sources. Never pad with fake data.
@@ -85,6 +85,6 @@ Deliver the MP4 + source list (each url/title/captured_at) + QA summary; state u
 - Search blocked: stop that engine; use another public engine or ask the user for screenshots.
 
 ## Examples
-- Chinese: keyword=`电子文盲` (simplified, kept as-is)
+- Simplified Chinese: keyword=`电子文盲` (kept as-is)
 - English: keyword=`digital illiteracy`
 - Mixed: keyword=`AI 文盲`
