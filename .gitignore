@@ -11,6 +11,7 @@ shots/
 # rendered videos except the published example
 *.mp4
 !examples/electronic-illiteracy/intro.mp4
+!examples/electronic-illiteracy/intro-720p.mp4
 .env
 *.pem
 *.key

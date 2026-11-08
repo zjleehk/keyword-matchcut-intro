@@ -4,9 +4,13 @@
 
 一個面向 AI agent 的 Skill：輸入一個關鍵字，agent 搜尋真實公開網頁並截圖，渲染為“紅色關鍵字鎖定在畫面正中央、周圍文章每 0.1 秒高速切換”的電影感片頭 MP4。支援簡體中文、繁體中文（輸入原樣保留，不做簡繁轉換）、英文及中英混排。
 
-[![效果示例：电子文盲](examples/electronic-illiteracy/preview.png)](examples/electronic-illiteracy/intro.mp4)
+[![效果示例：电子文盲](examples/electronic-illiteracy/preview.gif)](examples/electronic-illiteracy/intro-720p.mp4)
 
-▶ 效果示例：[examples/electronic-illiteracy/intro.mp4](examples/electronic-illiteracy/intro.mp4)（4 秒，1920x1080，30fps）。GitHub 是否在頁面內播放 mp4 取決於其渲染器；如未內嵌，可點選連結下載觀看。說明見 [examples/electronic-illiteracy/README.md](examples/electronic-illiteracy/README.md)。
+（GIF 動圖無聲音，點擊圖片或下方連結觀看有聲 MP4。GitHub 是否在頁面內播放 mp4 取決於其渲染器；如未內嵌，可下載觀看。）
+
+- 完整有聲影片（720p）：[examples/electronic-illiteracy/intro-720p.mp4](examples/electronic-illiteracy/intro-720p.mp4)
+- 完整有聲影片（1080p 高畫質原片）：[examples/electronic-illiteracy/intro.mp4](examples/electronic-illiteracy/intro.mp4)
+- 說明見 [examples/electronic-illiteracy/README.zh-TW.md](examples/electronic-illiteracy/README.zh-TW.md)
 
 ## 功能
 - 中心鎖定：紅色關鍵字的位置、字號、基線每幀完全一致

@@ -4,9 +4,13 @@
 
 一个面向 AI agent 的 Skill：输入一个关键词，agent 搜索真实公开网页并截图，渲染为“红色关键词锁定在画面正中央、周围文章每 0.1 秒高速切换”的电影感片头 MP4。支持简体中文、繁体中文（输入原样保留，不做简繁转换）、英文及中英混排。
 
-[![效果示例：电子文盲](examples/electronic-illiteracy/preview.png)](examples/electronic-illiteracy/intro.mp4)
+[![效果示例：电子文盲](examples/electronic-illiteracy/preview.gif)](examples/electronic-illiteracy/intro-720p.mp4)
 
-▶ 效果示例：[examples/electronic-illiteracy/intro.mp4](examples/electronic-illiteracy/intro.mp4)（4 秒，1920x1080，30fps）。GitHub 是否在页面内播放 mp4 取决于其渲染器；如未内嵌，可点击链接下载观看。说明见 [examples/electronic-illiteracy/README.md](examples/electronic-illiteracy/README.md)。
+（GIF 动图无声音，点击图片或下方链接观看有声 MP4。GitHub 是否在页面内播放 mp4 取决于其渲染器；如未内嵌，可下载观看。）
+
+- 完整有声视频（720p）：[examples/electronic-illiteracy/intro-720p.mp4](examples/electronic-illiteracy/intro-720p.mp4)
+- 完整有声视频（1080p 高清原片）：[examples/electronic-illiteracy/intro.mp4](examples/electronic-illiteracy/intro.mp4)
+- 说明见 [examples/electronic-illiteracy/README.md](examples/electronic-illiteracy/README.md)
 
 ## 功能
 - 中心锁定：红色关键词的位置、字号、基线每帧完全一致

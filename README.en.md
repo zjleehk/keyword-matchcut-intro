@@ -4,9 +4,13 @@
 
 A skill for AI agents: give it one keyword; the agent searches real public web pages, takes screenshots, and renders a cinematic intro MP4 where the red keyword stays locked in the exact center while surrounding articles switch every 0.1 s. Supports Simplified Chinese, Traditional Chinese (input kept verbatim, never converted), English, and mixed text.
 
-[![Visual example: 电子文盲](examples/electronic-illiteracy/preview.png)](examples/electronic-illiteracy/intro.mp4)
+[![Visual example: 电子文盲](examples/electronic-illiteracy/preview.gif)](examples/electronic-illiteracy/intro-720p.mp4)
 
-▶ Visual example: [examples/electronic-illiteracy/intro.mp4](examples/electronic-illiteracy/intro.mp4) (4 s, 1920x1080, 30 fps). Whether GitHub plays the mp4 inline depends on its renderer; if not, open the link to download it. Details: [examples/electronic-illiteracy/README.en.md](examples/electronic-illiteracy/README.en.md).
+(The GIF has no sound; click it or the links below for the MP4 with audio. Whether GitHub plays an mp4 inline depends on its renderer; otherwise download it.)
+
+- Full video with audio (720p): [examples/electronic-illiteracy/intro-720p.mp4](examples/electronic-illiteracy/intro-720p.mp4)
+- Full video with audio (1080p full-resolution original): [examples/electronic-illiteracy/intro.mp4](examples/electronic-illiteracy/intro.mp4)
+- Details: [examples/electronic-illiteracy/README.en.md](examples/electronic-illiteracy/README.en.md)
 
 ## Features
 - Center lock: the red keyword's position, size and baseline are identical in every frame

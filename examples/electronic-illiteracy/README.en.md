@@ -2,9 +2,13 @@
 
 [简体中文](README.md) | [繁體中文](README.zh-TW.md) | **English (current)**
 
-[![preview](preview.png)](intro.mp4)
+[![preview](preview.gif)](intro-720p.mp4)
 
-Video: [intro.mp4](intro.mp4) — 4 s, 1920x1080, 30 fps, H.264 + AAC
+Animated GIF (800px, 10 fps, no sound).
+
+- Full video with audio (720p, ~0.26 MB): [intro-720p.mp4](intro-720p.mp4)
+- Full video with audio (1080p original): [intro.mp4](intro.mp4) — 4 s, 1920x1080, 30 fps, H.264 + AAC
+- Still preview: [preview.png](preview.png)
 
 - Style: white web-page screenshots, red "电子文盲" in a fixed position, fast cuts around it, stable brightness, edge depth-of-field focus (`dof`, no spin/radial blur), ending on red text over white, original synthesized page-flip audio.
 - Material: public search-result pages and article pages, queried via:
