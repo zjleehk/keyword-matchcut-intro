@@ -1,0 +1,7 @@
+# render.py (offline)
+Pillow>=10.0
+numpy>=1.24
+fonttools>=4.40
+# optional: scripts/capture.py only  ->  pip install playwright && python -m playwright install chromium
+# playwright>=1.40
+# system: ffmpeg + ffprobe in PATH; a CJK-capable font for Chinese keywords

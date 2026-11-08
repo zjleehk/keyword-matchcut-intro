@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+work/
+out/
+*_qa/
+shots/
+*.zip
+*.wav
+# rendered videos except the published example
+*.mp4
+!examples/electronic-illiteracy/intro.mp4
+.env
+*.pem
+*.key
+.DS_Store

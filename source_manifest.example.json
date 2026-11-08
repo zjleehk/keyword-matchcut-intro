@@ -1,0 +1,30 @@
+{
+  "$schema_note": "keyword-matchcut-intro manifest v1. Paths relative to this file. Replace every value with REAL captured data; never invent pages.",
+  "schema": {
+    "keyword": "string, required. Exact text as given by the user (no simplified/traditional conversion).",
+    "sources[]": {
+      "id": "string, required, unique",
+      "url": "string, required. Real page URL the screenshot came from (or search-results URL)",
+      "title": "string, page title as shown",
+      "kind": "'article' | 'search_results' | 'other'",
+      "image": "string, required. PNG/JPG screenshot path",
+      "keyword_bbox": "[x, y, w, h] required, in IMAGE pixels (multiply CSS px by devicePixelRatio). Tight box around the keyword occurrence.",
+      "captured_at": "ISO-8601 timestamp",
+      "capture_method": "'playwright-dom-range' | 'native-browser+manual-bbox' | 'ocr' ...",
+      "note": "optional"
+    },
+    "rules": "min 3 entries (distinct passages); >=2 distinct urls recommended; render.py errors if keyword_bbox missing"
+  },
+  "keyword": "示例关键词 / example keyword",
+  "sources": [
+    {"id": "s1", "url": "https://example.com/article-a", "title": "Example title A", "kind": "article",
+     "image": "shots/s1.png", "keyword_bbox": [612, 404, 168, 42], "captured_at": "2026-01-01T00:00:00Z",
+     "capture_method": "playwright-dom-range"},
+    {"id": "s2", "url": "https://example.org/post-b", "title": "Example title B", "kind": "article",
+     "image": "shots/s2.png", "keyword_bbox": [300, 820, 170, 40], "captured_at": "2026-01-01T00:01:00Z",
+     "capture_method": "native-browser+manual-bbox"},
+    {"id": "s3", "url": "https://www.bing.com/search?q=%22example%22", "title": "Search results", "kind": "search_results",
+     "image": "shots/s3.png", "keyword_bbox": [210, 233, 90, 22], "captured_at": "2026-01-01T00:02:00Z",
+     "capture_method": "playwright-dom-range"}
+  ]
+}
